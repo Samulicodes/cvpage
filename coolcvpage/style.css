@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: 'Lobster', cursive;
+    color: rgb(66, 59, 56);
+}
+
+.landing {
+    min-height: 100vh;
+    background: url(./backgroundimage2.jpg);
+    background-size: cover;
+    padding: 0rem 5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding-left: 10rem;
+    font-size: 1.2rem;
+    color: rgb(194, 108, 77);
+}
+
+.nav-links a {
+    color: rgb(194, 108, 77);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#logo {
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: rgb(194, 108, 77);
+}
+
+.big-text {
+    position: absolute;
+    top: 30%;
+    left:  50%;
+    transform: translate(-50%, -30%);
+    font-weight: lighter;
+    font-size: 4rem;
+    color: rgb(194, 108, 77);
+    letter-spacing: 5px;
+}
+
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    color: blanchedalmond;
+    font-family: 'Potta One', cursive;
+    font-size: 3rem;
+}
+
+.slider {
+    background: url(./introbackgroundimage.jpg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.hide {
+    background: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+button {
+    background: none;
+    padding: 3px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-color: blanchedalmond;
+    letter-spacing: 1px;
+    font-family: "Lobster", cursive;
+    color: rgb(194, 108, 77);
+    outline: none;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    width: 500px;
+    max-width: 80%;
+    background-color: blanchedalmond;
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    font-size: 1.2rem;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}

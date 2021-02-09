@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modalstyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <title>Very Cool, right?</title>
+</head>
+<body>
+    <main>
+        <section class="landing">
+            <nav>
+                <h1 id="logo">
+                    All about me
+                </h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><button class="button" id="contact-button" data-modal-target="#modal">Contact Me</button></li>
+                    <li><button class="button" id="about-me-button" data-modal-target="#modal-about">About Me</button></li>
+                </ul>
+            </nav>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title">My contact information</div>
+                    <div data-close-button class="close-button">&times;</div>
+                </div>
+                <div class="modal-body">
+                    <span>Email: samuli.adahl@gmail.com</span>
+                </div>
+            </div>
+            <div class="modal" id="modal-about">
+                <div class="modal-header">
+                    <div class="title">Information about me</div>
+                    <div data-close-button class="close-button">&times;</div>
+                </div>
+                <div class="modal-body">
+                    <span><img src="./clown-face-apple.png" alt=""></span>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </section>
+        <h2 class="big-text">Samuli Ådahl</h2>
+    </main>
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="hide-text">Put</span>
+            </h1>
+            <h1 class="hide">
+                <span class="hide-text">Some</span>
+            </h1>
+            <h1 class="hide">
+                <span class="hide-text">Respect</span>
+            </h1>
+            <h1 class="hide">
+                <span class="hide-text">On my Name</span>
+            </h1>
+        </div>
+    </div>
+    <div class="slider"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" 
+    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" 
+    crossorigin="anonymous">
+    </script>
+    <script src="./app.js"></script>
+    <script src="./modalscript.js"></script>
+</body>
+</html>
